@@ -365,3 +365,16 @@ body {
   font-size: 14px;
   margin-top: 10px;
 }
+.suc-container {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "MerryChristmas", sans-serif;
+  white-space: nowrap;
+  width: auto;
+}
