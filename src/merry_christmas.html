@@ -19,7 +19,13 @@
       "
     >
       <h1>Yeh Yeh, Giáng sinh vui vẻ!!!</h1>
-      <audio autoplay loop src="../assests/well.mp3"></audio>
+      <audio autoplay loop src="../assets/well.mp3"></audio>
+      <script>
+        window.onload = () => {
+          const audio = document.getElementById("background-audio");
+          audio.muted = false;
+        };
+      </script>
     </div>
   </body>
 </html>
