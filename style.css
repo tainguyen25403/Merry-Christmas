@@ -275,6 +275,10 @@ body {
   font-family: "MerryChristmas";
   src: url("font/xmasfont.ttf") format("truetype");
 }
+@font-face {
+  font-family: "MerryChristmas2";
+  src: url("font/THSnowJungle.otf") format("truetype");
+}
 .merry-christmas {
   position: absolute;
   bottom: 150px;
