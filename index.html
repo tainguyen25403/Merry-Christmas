@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Merry Christmas</title>
+    <script>
+      window.onload = function () {
+        const audio = document.querySelector("audio");
+        audio.play().catch(() => {
+          alert("Trình duyệt chặn phát nhạc tự động. Hãy nhấn Play.");
+        });
+      };
+    </script>
   </head>
   <body>
     <div id="main-container">
@@ -33,6 +41,7 @@
       <div id="counter" class="countdown">
         <script src="src/script.js"></script>
       </div>
+      <audio autoplay loop src="assests/lyrics.mp3"></audio>
     </div>
   </body>
 </html>
