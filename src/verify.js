@@ -1,4 +1,4 @@
-const correctPassword = "I Love You 3000";
+const correctPassword = "More Than I Can Say";
 const submitButton = document.getElementById("submit");
 const passwordInput = document.getElementById("password");
 const errorMessage = document.getElementById("error-message");
