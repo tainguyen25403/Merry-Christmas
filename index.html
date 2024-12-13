@@ -34,13 +34,27 @@
         <script src="src/script.js"></script>
       </div>
       <div>
-        <iframe
-          src="assets/lyrics.mp3"
-          frameborder="0"
-          allow="autoplay"
-          style="display: none"
-        ></iframe>
+        <audio id="backgroundSound" src="assets/lyrics.mp3" loop></audio>
       </div>
+
+      <script>
+        const audio = document.getElementById("backgroundSound");
+        let hasPlayed = false;
+
+        document.addEventListener("mousemove", () => {
+          if (!hasPlayed) {
+            audio
+              .play()
+              .then(() => {
+                console.log("Âm thanh đã phát.");
+                hasPlayed = true;
+              })
+              .catch((error) => {
+                console.error("Lỗi khi phát âm thanh:", error);
+              });
+          }
+        });
+      </script>
     </div>
   </body>
 </html>
