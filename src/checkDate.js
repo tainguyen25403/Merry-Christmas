@@ -2,7 +2,7 @@ const now = new Date();
 const isToday =
   now.getDate() === 16 && now.getMonth() === 11 && now.getFullYear() === 2024;
 const isSpecialPeriod = (() => {
-  const start = new Date(2024, 11, 24, 11, 0, 0);
+  const start = new Date(2024, 11, 24, 23, 0, 0);
   const end = new Date(2024, 11, 25, 1, 0, 0);
   return now >= start && now <= end;
 })();
