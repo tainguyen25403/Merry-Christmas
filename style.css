@@ -382,3 +382,13 @@ body {
   white-space: nowrap;
   width: auto;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 5rem;
+  font-family: MerryChristmas2;
+  color: red;
+  margin: 0;
+}
